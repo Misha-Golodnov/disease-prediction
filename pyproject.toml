@@ -1,0 +1,33 @@
+[project]
+name = "avto-mo"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Misha-Golodnov", email = "mishagolodnovv@mail.ru" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "joblib>=1.6.0",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+]
+
+[project.scripts]
+avto-mo = "avto_mo:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.10",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "C4", "UP"]
+ignore = ["E501"]

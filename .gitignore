@@ -1,0 +1,23 @@
+# Виртуальное окружение
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Артефакты проекта
+data/processed/
+models/
+
+# IDE
+.idea/
+.vscode/
+
+# Линтер
+.ruff_cache/
+
+# ОС
+.DS_Store
+Thumbs.db
