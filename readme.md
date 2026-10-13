@@ -38,3 +38,7 @@ uv run python -m src.avto_mo.predict
 ## BPMN схема
 
 ![BPMN-схема](docs/bpmn.png)
+
+## BPMN-схема retraining-цикла
+
+![BPMN-схема retraining-цикла](docs/bpmn-retraining.png)
